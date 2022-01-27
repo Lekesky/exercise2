@@ -9,6 +9,10 @@ public class Main {
 
         for (int i = 0; i < week.length; i++) {
             System.out.println(week[i]);
+            System.out.println(currentTemperatures[i]);
+            if(currentTemperatures[i] < 32 &&  humidity[i] > 32){
+                System.out.println("It is likely to snow");
+            }
         }
     }
 }
